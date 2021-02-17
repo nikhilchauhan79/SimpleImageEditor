@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:windowAnimationStyle">@style/CustomActivityTransition</item>
+        <item name="buttonStyle">@style/BlueButton</item>
+        <item name="colorPrimary">#F06292</item>
+        <item name="colorPrimaryDark">#EC407A</item>
+        <item name="colorAccent">#ff5c8d</item>
+
+    </style>
+    <style name="CustomActivityTransition" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+
+    </style>
+    
+    <style name="BlueButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+</resources>
